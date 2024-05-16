@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-image: url('img/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-out;
+        }
+
+        .links-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .links-container a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .links-container img {
+            width: 100%;
+            height: auto;
+			transform: scale(0.8);
+            transition: transform 0.3s ease-out;
+        }
+
+        .links-container a:hover img {
+            transform: scale(1.0);
+        }
+
+        @media only screen and (max-width: 600px) {
+            .logo-container img {
+                transform: scale(0.6);
+            }
+        }
+    </style>
+    <title>BreakLimtiGamers</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container" id="logoContainer">
+            <img src="img/logo.png" alt="Logo" id="logo">
+        </div>
+        <div class="links-container">
+            <a href="https://discord.gg/v8tNcQZhVA">
+                <img src="img/discord.png" alt="Discord">
+            </a>
+            <a href="https://steamcommunity.com/groups/breaklimitgamers">
+                <img src="img/steam.png" alt="Steam">
+            </a>
+            <a href="ts3server://ts.breaklimitgamers.com?port=9987">
+                <img src="img/ts.png" alt="Teamspeak">
+            </a>
+        </div>
+
+        <script>
+            var logoContainer = document.getElementById('logoContainer');
+            var logo = document.getElementById('logo');
+
+            window.addEventListener('mousemove', function (e) {
+                var offsetX = e.clientX / window.innerWidth - 0.5;
+                var offsetY = e.clientY / window.innerHeight - 0.5;
+
+                var rotateX = -offsetY * 10;
+                var rotateY = offsetX * 10;
+
+                logo.style.transform = 'scale(0.8) perspective(1000px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)';
+            });
+
+            logoContainer.addEventListener('mouseleave', function () {
+                logo.style.transform = 'scale(0.8)';
+            });
+        </script>
+    </div>
+</body>
+</html>
