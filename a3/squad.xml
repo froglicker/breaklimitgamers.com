@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE squad SYSTEM "squad.dtd">
+<?xml-stylesheet href="squad.xsl?" type="text/xsl"?>
+<squad nick="BLG">
+	<name>BreakLimitGamers</name>
+	<email>admin@breaklimitgamers.com</email>
+	<web>breaklimitgamers.com</web>
+	<picture>logo.paa</picture>
+	<title>GO. BEYOND. LIMITS.</title>
+	<member id="76561198079317072" nick="frog licker">
+		<name>frog licker</name>
+		<email>froglicker@breaklimitgamers.com</email>
+		<icq>Founder</icq>
+		<remark>i c u</remark>
+	</member>
+	<member id="76561198034657551" nick="BLG Mercury">
+		<name>Magical Midnight Mercury</name>
+		<email>Mercury@breaklimitgamers.com</email>
+		<icq>Community Manager</icq>
+		<remark>It's entirely possible that I'm drunk</remark>
+	</member>
+	<member id="76561197981288561" nick="BLG Duffman">
+		<name>Nicolai</name>
+		<email>N/A</email>
+		<icq>Administrator</icq>
+		<remark>DUFFMAN! CAN'T DIE!"</remark>
+	</member>
+	<member id="76561198142548035" nick="BLG Qlaskov">
+		<name>Qlaskov</name>
+		<email>N/A</email>
+		<icq>Moderator</icq>
+		<remark>Bitches Be Crazy</remark>
+	</member>
+	<member id="76561197984204596" nick="BLG Lemming">
+		<name>Lemming</name>
+		<email>N/A</email>
+		<icq>Administrator</icq>
+		<remark>Walk off the cliff!</remark>
+	</member>
+</squad>
