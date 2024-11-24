@@ -48,11 +48,33 @@
         .links-container img {
             width: 100%;
             height: auto;
-			transform: scale(0.8);
+            transform: scale(0.8);
             transition: transform 0.3s ease-out;
         }
 
         .links-container a:hover img {
+            transform: scale(1.0);
+        }
+
+        /* New section for Arma3 link */
+        .arma3-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .arma3-container a {
+            text-decoration: none;
+        }
+
+        .arma3-container img {
+            width: 100%;
+            height: auto;
+            transform: scale(0.8);
+            transition: transform 0.3s ease-out;
+        }
+
+        .arma3-container a:hover img {
             transform: scale(1.0);
         }
 
@@ -78,6 +100,12 @@
             </a>
             <a href="ts3server://ts.breaklimitgamers.com?port=9987">
                 <img src="img/ts.png" alt="Teamspeak">
+            </a>
+        </div>
+        <!-- New Arma 3 link section -->
+        <div class="arma3-container">
+            <a href="https://breaklimitgamers.com/a3/squad.xml">
+                <img src="img/a3.png" alt="Arma3">
             </a>
         </div>
 
